@@ -17,11 +17,13 @@
         </div>
         
         <div class="button-grid">
-            <button class="function" onclick="notImplemented()">Conv</button>
             <button class="function" onclick="appendToDisplay('Math.sqrt(')">&radic;x</button>
-            <button class="function" onclick="notImplemented()">y&radic;x</button>
             <button class="function" onclick="appendToDisplay('**')">x^y</button>
             <button class="function" onclick="appendToDisplay('Math.sin(')">Sin</button>
+            <button class="function" onclick="appendToDisplay('(')">(</button>
+            <button class="function" onclick="appendToDisplay(')')">)</button>
+            <button class="operator" onclick="allClear()">Clear</button>
+            <button class="operator" onclick="backspace()">DEL</button>
             
             <button class="number" onclick="appendToDisplay('7')">7</button>
             <button class="number" onclick="appendToDisplay('8')">8</button>
@@ -41,7 +43,6 @@
             <button class="operator" onclick="appendToDisplay('-')">-</button>
             <button class="function" onclick="appendToDisplay('Math.log(')">ln</button>
             
-            <button class="function" onclick="placeholder()">.-</button>
             <button class="number" onclick="appendToDisplay('0')">0</button>
             <button class="equals" onclick="calculate()">=</button>
             <button class="operator" onclick="appendToDisplay('+')">+</button>
@@ -50,6 +51,6 @@
     </div>
 
 
-
+<script src="script.js"></script>
 </body>
 </html>
